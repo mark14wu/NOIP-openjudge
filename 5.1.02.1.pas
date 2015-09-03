@@ -15,8 +15,8 @@ begin
 		if t mod 4=2 then cycle:=cycle-vb;
 		if t mod 4=3 then cycle:=cycle+vc;
 		if t mod 4=0 then cycle:=cycle-vd;
-	until cycle>=999;
-    if cycle=999 then writeln(t,'.00') else begin
+	until cycle>=1000;
+    if cycle=1000 then writeln(t,'.00') else begin
       t:=t-1;
 	  if t mod 4=0 then writeln((1000-backup)/va+t:0:2)
 	    else if t mod 4=2 then writeln((1000-backup)/vc+t:0:2);
